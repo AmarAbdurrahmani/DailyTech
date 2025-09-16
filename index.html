@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DailyTech - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+  <h2>DailyTech</h2>
+  <div class="nav-wrapper">
+  <div id="menu-toggle">&#9776;</div> <!-- hamburger icon -->
+  <nav id="nav-menu">
+    <a href="#">Home</a>
+    <a href="#news">Tech News</a>
+    <a href="#categories">Categories</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#contact-us">Contact</a>
+  </nav>
+  </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Welcome to DailyTech</h1>
+      <p>Get the latest tech updates every day.</p>
+    </div>
+  </section>
+
+  <!-- Main content container -->
+  <main class="container main-content">
+
+    <h2 id="news">Latest Tech News</h2>
+    <div class="articles">
+      <div class="card">
+        <h3>AI Revolution in 2025</h3>
+        <p>Explore how AI is transforming industries globally.</p>
+        <button class="read-more">Read More</button>
+      </div>
+      <div class="card">
+        <h3>iPhone 16 Review</h3>
+        <p>Our early hands-on with Apple’s next flagship device.</p>
+        <button class="read-more">Read More</button>
+      </div>
+      <div class="card">
+        <h3>Cybersecurity Trends</h3>
+        <p>How to stay safe in an increasingly connected world.</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+
+    <!-- iPhone 16 Section -->
+    <section class="iphone-section">
+      <img src="img/image.png" alt="iPhone 16" class="transparent iphone-img" />
+      <p>
+        The iPhone 16 brings subtle design changes but major internal upgrades. Users will notice faster performance thanks to the new A18 chip, and improved low-light photography with the upgraded camera system.
+        Apple is also rumored to introduce new AI features that run directly on the device for privacy-focused personalization.
+      </p>
+    </section>
+
+    <!-- Colors section -->
+    <section class="colors-section">
+      <div class="image-row">
+        <img src="img/iphone-16-1.png" alt="iPhone 16 Color 1" class="transparent" />
+        <img src="img/iphone-16-2.png" alt="iPhone 16 Color 2" class="transparent" />
+        <img src="img/iphone-16-3.png" alt="iPhone 16 Color 3" class="transparent" />
+      </div>
+      <p>
+        The iPhone 16 series introduces a fresh palette of colors designed to appeal to a wide range of users. Alongside timeless classics like Silver and Space Gray, Apple has added vibrant shades such as Deep Purple, Sunset Gold, and Ocean Blue, offering both subtle elegance and bold statements. These colors are complemented by a sleek glass finish that enhances the device’s premium feel and durability. Whether you prefer a sophisticated neutral tone or a lively, eye-catching hue, the iPhone 16 lineup has a color option to fit your style perfectly.
+      </p>
+    </section>
+
+    <!-- Models section -->
+    <section class="models-section">
+      <p>
+        The lineup features the base iPhone 16, the larger iPhone 16 Max for those who want more screen real estate, and the powerful iPhone 16 Pro and Pro Max models which boast advanced camera systems and premium materials. Each model is designed to offer unique features and performance, catering to different preferences and needs.
+      </p>
+      <img src="img/iphone-models.png" alt="iPhone 16 Models" class="models-img" />
+    </section>
+
+    <!-- Cybersecurity Trends Section -->
+    <section class="cybersecurity-section">
+      <h2>Cybersecurity Trends</h2>
+      <p>How to stay safe in an increasingly connected world.</p>
+      <div class="cybersecurity-content">
+        <img src="img/cybersecurity.png" alt="Cybersecurity" class="cybersecurity-img" />
+        <p>
+          In today’s digital age, cybersecurity is more important than ever. As we become increasingly connected through smartphones, smart homes, and cloud services, the risks of data breaches, phishing attacks, ransomware, and malware continue to rise. Cybercriminals are becoming more sophisticated, targeting individuals, businesses, and governments alike. Staying safe means adopting best practices such as using strong, unique passwords, enabling two-factor authentication, keeping software and devices up-to-date, and being cautious with emails, links, and downloads. Additionally, awareness of emerging trends like zero-trust security models, AI-powered threat detection, and privacy-focused technologies is essential. By understanding and adapting to these developments, users can better protect their sensitive information and maintain digital privacy in an ever-evolving threat landscape.
+        </p>
+      </div>
+    </section>
+
+    <!-- AI Revolution Section -->
+    <section class="ai-section">
+      <h2>AI Revolution in 2025</h2>
+      <img src="img/aii.jpg" alt="AI Revolution" class="ai-img" /><br>
+      <p>
+        The AI Revolution in 2025 is reshaping industries around the world at an unprecedented pace. From healthcare and finance to manufacturing and entertainment, artificial intelligence technologies are driving innovation, efficiency, and new capabilities. Machine learning algorithms analyze massive datasets to improve decision-making, automation streamlines complex processes, and AI-powered tools enhance customer experiences. As AI continues to evolve, it promises to unlock opportunities and challenges that will define the future of work and society globally.
+      </p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+      <h2>Categories</h2>
+      <div class="categories">
+        <div class="category" onclick="filterByCategory('AI')">Artificial Intelligence</div>
+        <div class="category" onclick="filterByCategory('Software')">Software</div>
+        <div class="category" onclick="filterByCategory('Gadgets')">Gadgets</div>
+        <div class="category" onclick="filterByCategory('Security')">Cybersecurity</div>
+        <div class="category" onclick="filterByCategory('Startups')">Startups</div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+      <h2>⭐ Reviews</h2>
+      <div class="review">
+        <div class="stars">★★★★☆</div>
+        <div class="review-author">Alice</div>
+        <div class="review-text">Great content about AI trends!</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <div class="review-author">Bob</div>
+        <div class="review-text">Loved the gadgets review section!</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★☆☆</div>
+        <div class="review-author">John</div>
+        <div class="review-text">Good info but could be more detailed.</div>
+      </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comment-section">
+      <h2>💬 Leave a Comment</h2>
+      <textarea placeholder="Write your comment here..." rows="4"></textarea>
+      <button onclick="alert('Thank you for your comment!')">Post Comment</button>
+    </section><br>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        At <strong>DailyTech</strong>, we are passionate about bringing you the latest news in technology – from AI breakthroughs to gadget reviews.
+        <br />
+        Our mission is to make tech accessible, understandable, and exciting for everyone.
+      </p>
+    </section><br>
+
+    <!-- Contact Us Section -->
+  <section id="contact-us" class="contact-section">
+  <h2>📩 Contact Us</h2>
+  <p>Have questions or feedback? Send us a message!</p>
+
+  <form id="contactForm" method="post">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name" required><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Your email" required><br>
+
+    <label for="subject">Subject</label><br>
+    <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+      <!-- Message Output -->
+    <div id="formResponse" style="margin-top: 15px; font-weight: bold;"></div>
+  </section>
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" style="text-align: center; padding: 32px 16px;">
+      <h2>📧 Subscribe to Our Newsletter</h2>
+      <p>Get the latest tech news straight to your inbox.</p>
+      <form id="newsletterForm" style="margin-top: 12px;">
+        <input
+          type="email"
+          id="newsletterEmail"
+          placeholder="Enter your email"
+          class="newsletter-input"
+          required
+          aria-label="Email address for newsletter subscription"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section><br>
+
+    <!-- Write for DailyTech Section -->
+    <section class="write-section" style="text-align: center;">
+      <h2>✍️ Write for DailyTech</h2>
+      <p>Are you passionate about tech? We're looking for contributors!</p>
+      <button onclick="alert('Send your article ideas to dailytech@gmail.com')">Join Us</button>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="footer-left">
+      <h3>DailyTech</h3>
+      <p>&copy; 2025 DailyTech. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <h3>Contact Us</h3>
+      <p>Email: dailytech@gmail.com</p>
+      <p>Phone: +383 49 123 456</p>
+      <div class="social-links">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="img/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+
+<!--<button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">⬆️ Top</button>-->
+
+<!-- Read More Modal -->
+<div id="articleModal" style="
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1001;
+">
+  <h3 id="modalTitle">Full Article Title</h3>
+  <p id="modalContent">This is where the full article would go...</p>
+  <button onclick="closeModal()">Close</button>
+</div>
+
+<script src="js/menu.js"></script>
+</body>
+</html>
+
